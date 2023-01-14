@@ -629,10 +629,6 @@ video {
   min-height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -813,6 +809,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -821,11 +822,6 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pt-2 {
@@ -965,7 +961,6 @@ video {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: lightpink;
 }
 
 /* mobile nav styling */
@@ -1062,18 +1057,6 @@ video {
     height: 2.75rem;
   }
 
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:min-h-full {
-    min-height: 100%;
-  }
-
-  .md\:min-h-screen {
-    min-height: 100vh;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1152,11 +1135,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .lg\:pt-16 {
