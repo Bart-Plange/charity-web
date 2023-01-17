@@ -13,54 +13,71 @@
 <!-- hero bg -->
     <section class=" cta-bg min-h-screen">
 
-    <header class="relative md:bg-footcolor">
-        <nav class="container mx-auto flex justify-between py-4 p-2 md:p-0 text-lightpinkneutral">
-            <!-- logo -->
-            <div>
-                <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12"></a>
-            </div>
-             <!-- nav items -->
-            <div class="hidden md:flex">
-                <ul class="flex py-4 space-x-6 font-semibold">
-
-                    <li class=" hover:underline"><a href="index.html">Home</a></li>
-                    <li class=" hover:underline"><a href="about.html">About Us</a></li>
-                    <li class=" hover:underline"><a href="mission.html">Mission</a></li>
-                    <li class=" hover:underline"><a href="gallery.html">Gallery</a></li>
-                    <li class=" hover:underline"><a href="contact.html">Contact</a></li>
-                    <li class=" hover:underline"><a href="donate.html" class="btn">Donate</a></li>
+        <header class="relative md:bg-footcolor">
+            <nav class="container mx-auto flex justify-between py-4 p-2 md:p-0 text-lightpinkneutral">
+                <!-- logo -->
+                <div>
+                    <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12"></a>
+                </div>
+                 <!-- nav items -->
+                <div class="hidden md:flex">
+                    <ul class="flex py-4 space-x-6 font-semibold">
+    
+                        <li class=" hover:underline"><a href="index.html">Home</a></li>
+                        <li class=" hover:underline"><a href="about.html">About Us</a></li>
+                        <li class=" hover:underline"><a href="mission.html">Mission</a></li>
+                        <li class=" hover:underline"><a href="gallery.html">Gallery</a></li>
+                        <li class=" hover:underline"><a href="contact.html">Contact</a></li>
+                        <li class=" hover:underline"><a href="donate.html" class="btn">Donate</a></li>
+                    
+                    </ul>
+                </div>
+    
+                <button id="navbtn" class="md:hidden">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+            </nav>
+    
+    
+            <!-- nav items for mobile -->
+            <div class=" mobilenav hidden container mx-auto px-6 absolute flex-col min-h-screen min-w-full bg-footcolor" id="menu">
+    
+                <div class="flex flex-col justify-center text-lightpinkneutral pt-8 text-center">
+                    <ul>
+    
+                        <li class="py-2 pt-2 hover:underline"><a href="index.html">Home</a></li>
+                        <li class="py-4 hover:underline"><a href="about.html">About Us</a></li>
+                        <li class="py-4 hover:underline"><a href="mission.html">Mission</a></li>
+                        <li class="py-4 hover:underline"><a href="gallery.html">Gallery</a></li>
+                        <li class="py-4 hover:underline"><a href="contact.html">Contact</a></li>
+                        <li class="btn hover:underline">
+                        <a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="flex justify-center flex-wrap items-center text-lightpinkneutral ">
+    
+                    <div class="flex space-x-12 pt-6">
+                        <a href=""><img src="images/icon-facebook.svg" alt="facebook"></a>
+                        <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+                        <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                        <a href=""><img src="images/icon-youtube.svg" alt=""></a>
+                    </div>
+    
+                    <div class="flex flex-wrap pt-6">
+                        <h3 class="mr-2">Tel:</h3>
+                        <a href="tel:+233242870568">+233 242870568</a>
+                    </div>
                 
-                </ul>
+                </div> 
+                
+    
             </div>
-
-            <button id="navbtn" class="md:hidden">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-            </button>
-        </nav>
-
-
-        <!-- nav items for mobile -->
-        <div class=" mobilenav hidden container mx-auto px-6 absolute flex-col min-h-screen min-w-full bg-footcolor" id="menu">
-
-            <div class="flex flex-col justify-center text-lightpinkneutral">
-                <ul>
-
-                    <li class="py-2 pt-2 hover:underline"><a href="index.html">Home</a></li>
-                    <li class="py-4 hover:underline"><a href="about.html">About Us</a></li>
-                    <li class="py-4 hover:underline"><a href="mission.html">Mission</a></li>
-                    <li class="py-4 hover:underline"><a href="gallery.html">Gallery</a></li>
-                    <li class="py-4 hover:underline"><a href="contact.html">Contact</a></li>
-                    <li class="btn hover:underline">
-                    <a href="donate.html">Donate</a></li>
-                </ul>
-            </div>
-            
-
-        </div>
-
-    </header>
+    
+        </header>
 
     
 <main>
@@ -85,7 +102,7 @@
     <!-- Donate form -->
     <section>
         <div class=" container mx-auto py-6 p-2">
-            <div class="lg:flex space-x-6">
+            <div class="md:flex lg:space-x-6">
                 <!-- text content -->
                 <div class="lg:w-1/2">
                     <div class="pb-4 pt-2">
@@ -108,7 +125,7 @@
                             <div>
                                 <P class="text-md py-3">Different options to make payment:</P>
                             </div>
-                            <div class="flex space-x-6 pb-4">
+                            <div class="flex space-x-4 pb-4">
                                 <img src="images/mastercard.svg" alt="mastercard" class=" w-10">
                                 <img src="images/amex-card.svg" alt="American Express Card" class=" w-10">
                                 <img src="images/delta-card.svg" alt="delta-card" class=" w-10">
@@ -135,102 +152,110 @@
             </div>
         </div>
     </section>
-
-        <!-- Activities and events -->
         
 
         <!-- newsletter section -->
 
         <section class=" bg-softpurpleprimary">
             <div class="container mx-auto py-6">
-                <div class="p-2 flex flex-col align-center justify-center items-center">
+                <div class="p-2 flex flex-col align-center justify-center items-center text-center">
                     <div class=" pb-4">
                         <p class=" font-semibold text-2xl md:text-3xl">Get to know what's happening regularly</p>
                     </div>
                     <form action="" method="post">
-                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-11">
+                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-10 p-2">
                         <button class="btn md:py-3 md:mx-8">Get in touch</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <!-- donate section -->
 
 </main>
 
+<!-- footer section -->
 
-    <footer class=" bg-footcolor text-lightpinkneutral">
-        <section class="container mx-auto py-6 items-center p-2 md:p-0">
-            <section class=" items-center">
-                <div class="flex flex-col items-center">
-                    <img src="images/logo.png" alt="" class="w-20">
-                </div>
-                <div>
-                    <h2 class="text-2xl font-semibold">Menu Items</h2>
-                </div>
-                <div class="flex text-lightpinkneutral space-x-16 pt-2 pb-4 justify-between">
-                    <ul>
+<footer class=" bg-footcolor text-lightpinkneutral">
+    <section class="container mx-auto py-6 items-center p-2 md:p-0">
+        
+        <div class="flex flex-col items-center">
+            <img src="images/logo.png" alt="" class="w-20">
+        </div>
 
-                        <li class="py-3"><a href="#">Home</a></li>
-                        <li class="py-3"><a href="about.html">About Us</a></li>
+        <!-- footer items container -->
+    <section class="lg:flex justify-between">    
+        <section class=" items-center ">
+            <!-- menu items -->
+            <div>
+                <h2 class="text-2xl font-semibold">Menu Items</h2>
+            </div>
 
-                    </ul>  
+            <div class="flex text-lightpinkneutral space-x-16 pt-2 pb-4 justify-between">
+                <ul>
 
-                    <ul>
-                        <li class="py-3"><a href="mission.html">Mission</a></li>
-                        <li class="py-3"><a href="gallery.html">Gallery</a></li>
-                    </ul> 
+                    <li class="py-3"><a href="#">Home</a></li>
+                    <li class="py-3"><a href="about.html">About Us</a></li>
 
-                    <ul>
-                        
-                        <li class="py-3 pb-3"><a href="contact.html">Contact</a></li>
-                        <li class="py-3"><a href="donate.html">Donate</a></li>
-                        
-                    </ul>
-                </div>
+                </ul>  
+
+                <ul>
+                    <li class="py-3"><a href="mission.html">Mission</a></li>
+                    <li class="py-3"><a href="gallery.html">Gallery</a></li>
+                </ul> 
+
+                <ul>
+                    
+                    <li class="py-3 pb-3"><a href="contact.html">Contact</a></li>
+                    <li class="py-3"><a href="donate.html">Donate</a></li>
+                    
+                </ul>
+            </div>
+        </section>
+
+<!-- newsletter section -->
+
+        <section class=" flex flex-col md:flex md:justify-between md:pt-8">
+            <section class="pt-6 lg:pt-2">
+                <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-80 md:h-10 p-2">
+                <button for="input" class="btn md:py-3 md:mx-8">Newsletter</button>
             </section>
 
-            <section class=" flex flex-col md:flex-row md:justify-between md:pt-8">
-                <section class="pt-6">
-                    <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-80 md:h-11">
-                    <button for="input" class="btn md:py-3 md:mx-8">Newsletter</button>
-                </section>
-
-                <section>
-                    <div class="py-2">
-                        <div class="pb-6">
-                            <h2 class="text-2xl font-semibold">Let's go social</h2>
-                        </div>
-                        
-                        <div class="flex justify-between flex-wrap ">
-
-                            <div class="flex space-x-12 pb-3">
-                                <a href=""><img src="images/icon-facebook.svg" alt="facebook"></a>
-                                <a href=""><img src="images/icon-instagram.svg" alt=""></a>
-                                <a href=""><img src="images/icon-twitter.svg" alt=""></a>
-                                <a href=""><img src="images/icon-youtube.svg" alt=""></a>
-                            </div>
-
-                            <div class="flex flex-wrap md:mx-4">
-                                <h3 class="mr-2">Tel:</h3>
-                                <a href="tel:+233242870568">+233 242870568</a>
-                            </div>
-                        
-                        </div>    
+            <!-- social icons -->
+            <section>
+                <div class="py-2 lg:flex lg:space-x-4">
+                    <div class="pb-6">
+                        <h2 class="text-2xl font-semibold">Let's go social:</h2>
                     </div>
-                </section>
-            </section>
+                    
+                    <div class="flex justify-between flex-wrap ">
 
-            <section class="flex justify-between py-4">
-                <div>copyright @ 2023</div>
-                <div>
-                    <a>Terms and Conditions</a>
+                        <div class="flex space-x-12 pb-3 lg:pt-2">
+                            <a href=""><img src="images/icon-facebook.svg" alt="facebook"></a>
+                            <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+                            <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                            <a href=""><img src="images/icon-youtube.svg" alt=""></a>
+                        </div>
+
+                        <div class="flex flex-wrap md:mx-4 lg:pt-1 lg:mr-3">
+                            <h3 class="mr-2">Tel:</h3>
+                            <a href="tel:+233242870568">+233 242870568</a>
+                        </div>
+                    
+                    </div>    
                 </div>
             </section>
 
         </section>
-    </footer>
+</section>        
+        <section class="flex justify-between py-4">
+            <div>copyright @ 2023</div>
+            <div>
+                <a>Terms and Conditions</a>
+            </div>
+        </section>
+    </section>
+
+</footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     
     <script src="script.js"></script>
