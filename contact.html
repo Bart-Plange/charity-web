@@ -99,6 +99,12 @@
                         <!-- form -->
                         <div class="text-center">
                             <form action="https://formsubmit.io/send/7232436c-daa3-4040-b129-cfdd308c2ed1" method="POST">
+
+                                <!-- honeypot -->
+                                <input name="_formsubmit_id" type="text" style="display:none">
+                                <!-- success page info -->
+                                <input type="hidden" name="_next" value="https://nyametease.netlify.app/success.html">
+
                                 <div>
                                 <input type="text" name="Name" id="name" class=" w-full mb-6 h-10 border border-gray-800 focus:outline-none font-bold rounded-lg p-2" placeholder="Enter Your Name">
 
@@ -109,9 +115,6 @@
                                 <textarea type="text" name="Message" id="message"m class=" h-32 border border-gray-800 w-full mb-4 rounded-lg p-2 flex-wrap" placeholder="Enter Your Message" cols="30" rows="10">
                                 </textarea>
                                 </div>
-
-                                <!-- to fool spam -->
-                                <input name="_formsubmit_id" type="text" style="display:none">
 
                                 <button class="btn" type="submit">
                                     Send Message
