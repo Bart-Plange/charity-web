@@ -14,7 +14,7 @@
         <nav class="container mx-auto flex justify-between py-4 p-2 md:p-0 text-lightpinkneutral">
             <!-- logo -->
             <div>
-                <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12"></a>
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12 "></a>
             </div>
              <!-- nav items -->
             <div class="hidden md:flex">
@@ -77,6 +77,16 @@
     </header>
      
     <main>
+        <!-- hero section -->
+        <section>
+            <div class=" container mx-auto py-4">
+                <div>
+                    <h1>
+                        
+                    </h1>
+                </div>
+            </div>
+        </section>
 
         <!-- contact area -->
 
@@ -97,24 +107,30 @@
                     <div class="flex flex-row py-4 items-center ">
 
                         <!-- form -->
-                        <div class="text-center">
+                        <div class="text-center md:flex md:flex-row">
                             <form action="https://formsubmit.io/send/7232436c-daa3-4040-b129-cfdd308c2ed1" method="POST">
 
                                 <!-- honeypot -->
                                 <input name="_formsubmit_id" type="text" style="display:none">
                                 <!-- success page info -->
-                                <!-- <input type="hidden" name="_next" value="https://nyametease.netlify.app/success.html"> -->
+
+                                <input type="hidden" name="_next" value="https://nyametease.netlify.app/success.html">
+
+                                <!-- redirect to home -->
+                                <input name="_redirect" type="hidden" id="name" value="https://nyametease.netlify.app">
 
                                 <div>
                                 <input type="text" name="Name" id="name" class=" w-full mb-6 h-10 border border-gray-800 focus:outline-none font-bold rounded-lg p-2" placeholder="Enter Your Name">
 
                                 <input type="text" name="Mail" id="mail" class=" w-full mb-6 h-10 border border-gray-800 focus:outline-none font-bold rounded-lg p-2" placeholder="Enter Your Email">
 
+                                </div>
+
                                 <div>
 
-                                <textarea type="text" name="Message" id="message"m class=" h-32 border border-gray-800 w-full mb-4 rounded-lg p-2 flex-wrap" placeholder="Enter Your Message" cols="30" rows="10">
+                                <textarea type="text" name="Message" id="message" class="border border-gray-800 h-30 w-full mb-4 rounded-lg p-2 flex-wrap" placeholder="Enter Your Message" cols="30" rows="10">
                                 </textarea>
-                                </div>
+                                
 
                                 <button class="btn" type="submit">
                                     Send Message
@@ -132,33 +148,36 @@
 
         <!-- map and location -->
 
-        <section>
-            <div class=" container mx-auto pt-2 pb-6 ">
-                <div class=" bg-footcolor text-lightpinkneutral p-2">
+        <section class=" bg-lightpinkneutral">
+            <div class=" container mx-auto pt-2 pb-6 md:py-6">
+                <div class=" p-2 flex flex-col-reverse md:flex-row-reverse space-x-4 justify-between">
 
                     <!-- map section -->
-                    <div class="md:w-1/3">
-                        <iframe src="" frameborder="0"></iframe>
+                    <div class="md:w-2/3 w-full">
+                        <div class="map_container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10876.835749731223!2d-0.30581659309628245!3d5.740482109995906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf0b135cb1aa37%3A0x1a6ddefbbe77c48b!2sKOANS%20INTERNATIONAL%20SCHOOL!5e0!3m2!1sen!2sgh!4v1674012964338!5m2!1sen!2sgh"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=" h-full w-2/3"></iframe>
+                        </div>
                     </div>
 
                     <!-- location -->
-                    <div class="">
-
-                        <div class="flex space-x-6">
-                        <p class="pb-2">Location:</p>
+                    <div class="md:w-1/3 text-md font-semibold">
+                        <div class="flex flex-col pb-6">
+                        <img src="images/location.svg" alt="" class="w-10 mb-3">
                         <p>Kpobiman,</p>
                         <p>Accra - Ghana</p>
                         </div>
+
                         <!-- contact -->
-                        <div class="flex space-x-6">
-                        <p class="pb-2">Contact:</p>
+                        <div class="flex flex-col pb-6">
+                        <img src="images/phone.svg " alt="" class="w-10 mb-3">
                         <a href="tel:123456789">+233 242870568</a>
                         </div>
+
                         <!-- mail -->
-                        <div class="flex space-x-12">
-                           
-                        <p class="flex"><img src="images/mail.svg" alt="" class=" w-4 bg-lightpinkneutral ">Mail:</p>
-                        <a href="mail:nyameteasecharity@gmail.com">info@nyameteasecharity.com</a>
+                        <div class="flex flex-col">
+                        <img src="images/mail.svg" alt="" class="w-10 mb-3">
+                        <a href="mail:nyameteasecharity@gmail.com">info@nyameteasefoundation.com</a>
+                        <a href="" type="mail">nyameteaseperfectgrace@gmail.com</a>
                         </div>    
 
                     </div>
