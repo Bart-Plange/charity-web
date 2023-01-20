@@ -13,7 +13,7 @@
    <!--  <section class="bg-full"> -->
 
     <header class="relative md:bg-footcolor">
-        <nav class="container mx-auto flex justify-between py-4 p-2 md:p-0 text-lightpinkneutral">
+        <nav class="container mx-auto flex justify-between py-4 p-2 text-lightpinkneutral">
             <!-- logo -->
             <div>
                 <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12"></a>
@@ -27,7 +27,7 @@
                     <li class=" hover:underline"><a href="mission.html">Mission</a></li>
                     <li class=" hover:underline"><a href="gallery.html">Gallery</a></li>
                     <li class=" hover:underline"><a href="contact.html">Contact</a></li>
-                    <li class=" hover:underline"><a href="donate.html" class="btn">Donate</a></li>
+                    <li ><a href="donate.html" class="btn">Donate</a></li>
                 
                 </ul>
             </div>
@@ -51,7 +51,7 @@
                     <li class="py-4 hover:underline"><a href="mission.html">Mission</a></li>
                     <li class="py-4 hover:underline"><a href="gallery.html">Gallery</a></li>
                     <li class="py-4 hover:underline"><a href="contact.html">Contact</a></li>
-                    <li class="btn hover:underline">
+                    <li class="btn">
                     <a href="donate.html">Donate</a></li>
                 </ul>
             </div>
@@ -81,8 +81,8 @@
     <main>
         <!-- hero section -->
         <section class="hero">
-            <div class="h-screen container mx-auto md:pt-12 p-2 md:flex">
-                <div class="herotext flex flex-col justify-center text-center items-center leading-7 mt-12 pt-4 text-purple-700 ">
+            <div class="h-4/5 container mx-auto md:py-14 p-2 md:flex">
+                <div class="herotext flex flex-col justify-center text-center items-center leading-7 mt-12 pt-6 text-blue-900 md:px-2">
                     <div>
                     <h1 class="text-4xl font-bold md:text-6xl lg:text-8xl" data-aos="fade-down">NYAMETEASE<br> </h1>
                     </div>
@@ -92,19 +92,40 @@
                     </div>
 
                     <div>    
-                    <p class="md:py-6 py-4" data-aos="fade-down" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia laboriosam numquam repudiandae quas omnis aliquid id animi tenetur veritatis?</p>
+                    <p class="md:py-6 py-4 text-gray-900 text-xl" data-aos="fade-down" data-aos-delay="200">At Perfect Grace Foundation, we cherish life and the decision to make life better is a decision to recreate a generation of hope</p>
                     </div>
 
                     <div class="flex">
-                    <a href="#" class="btn" data-aos="fade-up" data-aos-delay="250">Let's Start</a>
+                    <a href="#cta" class="btn" data-aos="fade-up" data-aos-delay="250">Let's Start</a>
                     </div>
                 </div>
             </div>            
         </section>
   <!--   </section> -->
         
+
+        <!-- cta -->
+        <section id="cta" class=" bg-footcolor text-lightpinkneutral">
+            <div class=" container mx-auto p-2 ">
+                <div class="text-center md:py-12">
+                    <div>
+                        <h2 class="text-4xl font-bold pb-6" data-aos="fade-up">
+                            Everyone Belongs, A Foundation For Us All
+                        </h2>
+                        <p class="text-xl py-4" data-aos="fade-up" data-aos-delay="100">
+                            The life of a child and a family matters, every bit of it is a blessing. To make someone happy is a core priority of life. If you make someone smile, remember you have caused a generation to smile. You shall always be remembered as the one who influenced the change.
+                        </p>
+                    </div>
+                    <div class="py-4">
+                        <a href="donate.html" class="btn" data-aos="fade-up" data-aos-delay="150">Let's do this together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- about section -->
-        <section class="max-vh-100 pt-0 mt-0">
+        <section class="max-vh-100 pt-8 mt-0">
             <div class=" container mx-auto pb-6 p-2 flex flex-col justify-center items-center lg:flex-row lg:space-x-6">
 
                 <div class=" lg:w-1/2 pb-4">
@@ -113,10 +134,10 @@
                     <br>
                     <p class="leading-7 pb-6" data-aos="fade-up" data-aos-delay="150">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga quis voluptas at. Soluta, nisi assumenda distinctio facere blanditiis amet ipsam natus similique reiciendis nihil modi expedita quis vero repellendus accusantium architecto velit iste dicta ipsa optio asperiores doloribus voluptatibus.</p>
 
-                    <a href="" class="btn" data-aos="fade-right" data-aos-delay="200">Learn More</a>
+                    <a href="about.html" class="btn" data-aos="fade-right" data-aos-delay="200">Learn More</a>
                 </div>
 
-                <div class="about-border bg-btncolor pt-8 lg:w-1/2" data-aos="fade-left">
+                <div class="about-border bg-btncolor pt-8 lg:w-1/2" data-aos="fade-up">
                     <div class="items-center py-4">
                         <img src="images/op4.jpg" alt="" class="w-full">
                     </div>
@@ -135,7 +156,7 @@
                     <p class="py-2 md:py-3" data-aos="fade-up" data-aos-delay="100">We can do it together, it doesnt take much. Any contribution you make will go long way to sponsor the life of not just a child, but a generation</p>
                     </div>
                     <div class="btn" data-aos="fade-up" data-aos-delay="150">
-                        <a href="#donate">See how you can help</a>
+                        <a href="contact.html">See how you can help</a>
                     </div>
                 </div>
             </div>
@@ -150,14 +171,15 @@
                 </div>
             <div class="lg:flex">    
                 <div class="flex flex-col p-4 m-4 bg-gray-200 rounded-lg shadow-lg">
-                    
+                    <!-- 
                     <div class="">
                         <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
                         <p class="pb-2">A list of counselling sections held for the children</p>
                     </div>
                     <div>
                         <img src="images/op1.jpg" alt="">
-                    </div>
+                    </div> -->
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
                     <div class="btn">
                         <a href="#">Learn More</a>
                     </div>
@@ -166,13 +188,14 @@
 
                 <div class="flex flex-col bg-gray-200 p-4 m-4 rounded-lg shadow-lg">
                     
-                    <div class="">
+                    <!-- <div class="">
                         <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
                         <p class="pb-2">A list of counselling sections held for the children</p>
                     </div>
                     <div>
                         <img src="images/op1.jpg" alt="">
-                    </div>
+                    </div> -->
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
                     <div class="btn">
                         <a href="#">Learn More</a>
                     </div>
@@ -182,13 +205,14 @@
             <div class="lg:flex">    
                 <div class="flex flex-col p-4 m-4 bg-gray-200 rounded-lg shadow-lg">
                     
-                    <div class="">
+                    <!-- <div class="">
                         <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
                         <p class="pb-2">A list of counselling sections held for the children</p>
                     </div>
                     <div>
                         <img src="images/op1.jpg" alt="">
-                    </div>
+                    </div> -->
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
                     <div class="btn">
                         <a href="#">Learn More</a>
                     </div>
@@ -197,13 +221,14 @@
 
                 <div class="flex flex-col bg-gray-200 p-4 m-4 rounded-lg shadow-lg">
                     
-                    <div class="">
+                    <!-- <div class="">
                         <h3 class="pb-2 text-2xl font-bold">Counseliing</h3>
                         <p class="pb-2">A list of counselling sections held for the children</p>
                     </div>
                     <div>
                         <img src="images/op1.jpg" alt="">
-                    </div>
+                    </div> -->
+                    <h2 class="text-xl font-bold text-center">Coming Soon</h2>
                     <div class="btn">
                         <a href="#">Learn More</a>
                     </div>
@@ -221,9 +246,13 @@
                     <div class=" pb-4">
                         <p class=" font-semibold text-2xl md:text-3xl" data-aos="fade-down">Get to know what's happening regularly</p>
                     </div>
-                    <form action="" method="post">
-                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-11 p-2" data-aos="fade-right" data-aos-delay="100">
-                        <button class="btn md:py-3 md:mx-8" data-aos="fade-left" data-aos-delay="100">Get in touch</button>
+                    <form action="https://formsubmit.io/send/7232436c-daa3-4040-b129-cfdd308c2ed1" method="post">
+                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-10 p-2" data-aos="fade-right" data-aos-delay="100">
+
+                        <button class="btn md:mx-8" data-aos="fade-up" data-aos-delay="100">Get in touch</button>
+
+                        <!-- redirect to home -->
+                        <input name="_redirect" type="hidden" id="name" value="https://nyametease.netlify.app/home">
                     </form>
                 </div>
             </div>
@@ -235,7 +264,7 @@
     <!-- footer section -->
 
     <footer class=" bg-footcolor text-lightpinkneutral" data-aos="fade-up">
-        <section class="container mx-auto py-6 items-center p-2 md:p-0">
+        <section class="container mx-auto py-6 items-center p-2">
             
             <div class="flex flex-col items-center">
                 <img src="images/logo.png" alt="" class="w-20">
@@ -252,7 +281,7 @@
                 <div class="flex text-lightpinkneutral space-x-16 pt-2 pb-4 justify-between">
                     <ul>
 
-                        <li class="py-3"><a href="#">Home</a></li>
+                        <li class="py-3"><a href="index.html">Home</a></li>
                         <li class="py-3"><a href="about.html">About Us</a></li>
 
                     </ul>  
@@ -275,7 +304,7 @@
 
             <section class=" flex flex-col md:justify-between md:pt-8">
                 <section class="pt-6 lg:pt-2 lg:flex">
-                    <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-72 md:h-11">
+                    <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-72 md:h-10">
                     <button for="input" class="btn md:py-2 md:mx-8">Newsletter</button>
                 </section>
 
@@ -306,7 +335,7 @@
 
             </section>
         </section>        
-                <section class="flex justify-between py-4">
+                <section class="flex justify-between py-2">
                     <div>copyright @ 2023</div>
                     <div>
                         <a>Terms and Conditions</a>

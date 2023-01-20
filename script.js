@@ -5,4 +5,5 @@ btn.addEventListener('click', () => {
     btn.classList.toggle('open')
     btnmenu.classList.toggle('flex')
     btnmenu.classList.toggle('hidden')
+
 })
