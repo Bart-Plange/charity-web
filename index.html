@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="assets/aos/aos.css">
     <title>Nyametease Perfect Grace Foundation/home</title>
@@ -13,7 +20,7 @@
    <!--  <section class="bg-full"> -->
 
     <header class="relative md:bg-footcolor">
-        <nav class="container mx-auto flex justify-between py-4 p-2 text-lightpinkneutral">
+        <nav class="container mx-auto flex justify-between py-4 p-2 md:p-0 text-lightpinkneutral">
             <!-- logo -->
             <div>
                 <a href="index.html"><img src="images/logo.png" alt="logo" class="w-12"></a>
@@ -81,8 +88,8 @@
     <main>
         <!-- hero section -->
         <section class="hero">
-            <div class="h-4/5 container mx-auto md:py-14 p-2 md:flex">
-                <div class="herotext flex flex-col justify-center text-center items-center leading-7 mt-12 pt-6 text-blue-900 md:px-2">
+            <div class="h-screen container mx-auto md:py-14 p-2 pb-14 mb-8 md:mb-0 md:flex justify-center align-center ">
+                <div class="herotext flex flex-col justify-center text-center items-center leading-7 mt-12 pt-6 md:pt-0 md:mt-4 text-blue-900 md:px-2">
                     <div>
                     <h1 class="text-4xl font-bold md:text-6xl lg:text-8xl" data-aos="fade-down">NYAMETEASE<br> </h1>
                     </div>
@@ -106,7 +113,7 @@
 
         <!-- cta -->
         <section id="cta" class=" bg-footcolor text-lightpinkneutral">
-            <div class=" container mx-auto p-2 ">
+            <div class=" container mx-auto p-2 mt-8">
                 <div class="text-center md:py-12">
                     <div>
                         <h2 class="text-4xl font-bold pb-6" data-aos="fade-up">
@@ -123,6 +130,107 @@
             </div>
         </section>
 
+
+        <!-- flipping cards -->
+        <section>
+            <div class="container mx-auto py-6 p-2 flex flex-col lg:flex-row justify-center items-center md:space-x-4">
+
+                <div class="relative w-full h-72 shadow-lg flip-card pb-4 mb-8 bg-cardinner">
+                    <div class="rounded-lg p-4">
+
+                    <div class="front flex flex-col items-center text-white p-4 md:pt-8">
+                        
+                        <div class="text-center leading-10 ">
+                        <p class="text-4xl font-bold">Donate </p>
+                        <p class="text-2xl font-medium md:text-4xl">to our</p>
+                        <p class="text-3xl font-bold md:text-4xl">Course</p>
+                        </div>
+                        
+                        <div class="pt-4 md:pt-8">
+                            <img src="images/money.svg" alt="money svg" class="w-20">
+                        </div>
+                    </div>
+                    <div class="back bg-orange-800 rounded-lg w-full h-full p-3 flex flex-col items-center">
+                        <div class="text-center text-white">
+                        <p class="text-2xl leading-10">Support our course with any amount</p>
+                        </div>
+                        <div class="py-2">
+                            <img src="images/money.svg" alt="money svg" class="w-20">
+                        </div>
+                        <div class="text-center pt-6">
+                        <a href="donate.html" class="btn">Make A Donation</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="relative w-full h-72 shadow-lg flip-card pb-4 mb-8 bg-cardinner">
+                    <div class="rounded-lg p-4">
+
+                    <div class="front flex flex-col items-center text-white p-4 md:pt-8">
+                        
+                        <div class="text-center leading-10 ">
+                        <p class="text-4xl font-bold">Contribute</p>
+                        <p class="text-2xl font-medium md:text-4xl">to our</p>
+                        <p class="text-3xl font-bold md:text-4xl">Course</p>
+                        </div>
+                        
+                        <div class="pt-4 md:pt-8">
+                            <img src="images/shakehands.svg" alt="shakehands" class="w-24">
+                        </div>
+                    </div>
+                    <div class="back bg-orange-800 rounded-lg w-full h-full p-3 flex flex-col items-center">
+                        <div class="text-center text-white">
+                        <p class="text-2xl leading-10">Be a heartfelt contributor</p>
+                        </div>
+                        <div class="py-2">
+                            <img src="images/shakehands.svg" alt="shakehands" class="w-24">
+                        </div>
+                        <div class="text-center pt-6">
+                        <a href="contact.html" class="btn">Contribute regularly</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class="relative w-full h-72 shadow-lg flip-card pb-4 mb-8 bg-cardinner">
+                    <div class="rounded-lg p-4">
+
+                    <div class="front flex flex-col items-center text-white p-4 md:pt-8">
+                        
+                        <div class="text-center leading-10 ">
+                        <p class="text-4xl font-bold">Partner with</p>
+                        <p class="text-2xl font-medium md:text-4xl">Nyametease</p>
+                        <p class="text-3xl font-bold md:text-4xl">Perfect Grace</p>
+                        </div>
+                        
+                        <div class="pt-4 md:pt-8">
+                            <img src="images/partner.svg" alt="partner icon" class="w-24">
+                        </div>
+                    </div>
+                    <div class="back bg-orange-800 rounded-lg w-full h-full p-3 flex flex-col items-center">
+                        <div class="text-center text-white">
+                        <p class="text-2xl leading-10">Be A Life time partner of Nyametease Perfect Grace</p>
+                        </div>
+                        <div class="py-2">
+                            <img src="images/partner.svg" alt="partner" class="w-24">
+                        </div>
+                        <div class="text-center pt-6">
+                        <a href="donate.html" class="btn">See How</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </section>  
 
         <!-- about section -->
         <section class="max-vh-100 pt-8 mt-0">
@@ -246,10 +354,10 @@
                     <div class=" pb-4">
                         <p class=" font-semibold text-2xl md:text-3xl" data-aos="fade-down">Get to know what's happening regularly</p>
                     </div>
-                    <form action="https://formsubmit.io/send/7232436c-daa3-4040-b129-cfdd308c2ed1" method="post">
-                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-10 p-2" data-aos="fade-right" data-aos-delay="100">
+                    <form action="https://formsubmit.io/send/7232436c-daa3-4040-b129-cfdd308c2ed1" method="Post">
+                        <input type="text" class="border border-solid border-gray-900 rounded-lg h-8 focus:outline-none my-2 md:w-80 md:h-10 p-2" required data-aos="fade-right" data-aos-delay="100">
 
-                        <button class="btn md:mx-8" data-aos="fade-up" data-aos-delay="100">Get in touch</button>
+                        <a href="" class="btn md:mx-8 cursor-pointer" data-aos="fade-up" data-aos-delay="100">Get in touch</a>
 
                         <!-- redirect to home -->
                         <input name="_redirect" type="hidden" id="name" value="https://nyametease.netlify.app/home">
@@ -263,7 +371,7 @@
 
     <!-- footer section -->
 
-    <footer class=" bg-footcolor text-lightpinkneutral" data-aos="fade-up">
+    <footer class=" bg-footcolor" data-aos="fade-up">
         <section class="container mx-auto py-6 items-center p-2">
             
             <div class="flex flex-col items-center">
@@ -275,7 +383,7 @@
             <section class=" items-center ">
                 <!-- menu items -->
                 <div>
-                    <h2 class="text-2xl font-semibold">Menu Items</h2>
+                    <h2 class="text-2xl font-semibold text-lightpinkneutral">Menu Items</h2>
                 </div>
 
                 <div class="flex text-lightpinkneutral space-x-16 pt-2 pb-4 justify-between">
@@ -303,14 +411,14 @@
             <!-- newsletter section -->
 
             <section class=" flex flex-col md:justify-between md:pt-8">
-                <section class="pt-6 lg:pt-2 lg:flex">
-                    <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-72 md:h-10">
-                    <button for="input" class="btn md:py-2 md:mx-8">Newsletter</button>
+                <section class="pt-6 lg:pt-2 lg:flex text-black">
+                    <input type="text" class="my-2 h-8 rounded-lg focus:outline-none md:w-72 md:h-10 p-2" required>
+                    <button for="input" type="submit" class="btn md:py-2 md:mx-8">Newsletter</button>
                 </section>
 
                 <!-- social icons -->
                 <section>
-                    <div class="py-2 lg:flex lg:space-x-4">
+                    <div class="py-2 lg:flex lg:space-x-4 text-lightpinkneutral">
                         <div class="pb-6">
                             <h2 class="text-2xl font-semibold">Let's go social:</h2>
                         </div>
@@ -335,7 +443,7 @@
 
             </section>
         </section>        
-                <section class="flex justify-between py-2">
+                <section class="flex justify-between py-2 text-lightpinkneutral">
                     <div>copyright @ 2023</div>
                     <div>
                         <a>Terms and Conditions</a>
