@@ -107,7 +107,7 @@
                     <div class="flex flex-row py-4 items-center ">
 
                         <!-- form -->
-                        <div class="text-center md:flex md:flex-row">
+                        <div class="text-center flex flex-col md:flex-row">
                             <form action="https://formsubmit.io/send/7232436c-daa3-4040-b129-cfdd308c2ed1" method="POST">
 
                                 <!-- honeypot -->
@@ -119,24 +119,28 @@
                                 <!-- redirect to home -->
                                 <input name="_redirect" type="hidden" id="name" value="https://nyametease.netlify.app">
 
-                                <div>
+                              <div class="flex flex-col md:flex-row md:space-x-6">  
+                                <div class="md:w-1/2">
                                 <input type="text" name="Name" id="name" class=" w-full mb-6 h-10 border border-gray-800 focus:outline-none font-bold rounded-lg p-2" placeholder="Enter Your Name">
 
                                 <input type="text" name="Mail" id="mail" class=" w-full mb-6 h-10 border border-gray-800 focus:outline-none font-bold rounded-lg p-2" placeholder="Enter Your Email">
 
+                                <button class="btn md:flex hidden" type="submit">
+                                    Send Message
+                                </button>
                                 </div>
 
-                                <div>
-
+                                
+                                <div class="md:w-1/2">
                                 <textarea type="text" name="Message" id="message" class="border border-gray-800 h-30 w-full mb-4 rounded-lg p-2 flex-wrap" placeholder="Enter Your Message" cols="30" rows="10">
                                 </textarea>
-                                
-
-                                <button class="btn" type="submit">
+                                </div>
+                              </div>  
+                                <button class="btn md:hidden" type="submit">
                                     Send Message
                                 </button>
 
-                                </div>
+                                
                             </form>
                         </div>
 
@@ -148,7 +152,7 @@
 
         <!-- map and location -->
 
-        <section class=" bg-lightpinkneutral">
+        <section class=" bg-gray-100">
             <div class=" container mx-auto pt-2 pb-6 md:py-6">
                 <div class=" p-2 flex flex-col-reverse md:flex-row-reverse space-x-4 justify-between">
 
@@ -170,14 +174,14 @@
                         <!-- contact -->
                         <div class="flex flex-col pb-6">
                         <img src="images/phone.svg " alt="" class="w-10 mb-3">
-                        <a href="tel:123456789">+233 242870568</a>
+                        <a href="tel:+233242870568">+233 242870568</a>
                         </div>
 
                         <!-- mail -->
                         <div class="flex flex-col">
                         <img src="images/mail.svg" alt="" class="w-10 mb-3">
-                        <a href="mail:nyameteasecharity@gmail.com">info@nyameteasefoundation.com</a>
-                        <a href="" type="mail">nyameteaseperfectgrace@gmail.com</a>
+                        <a href="mailto:nyameteasecharity@gmail.com">info@nyameteasefoundation.com</a>
+                        <a href="mailto:nyameteaseperfectgrace@gmail.com">nyameteaseperfectgrace@gmail.com</a>
                         </div>    
 
                     </div>
@@ -251,7 +255,7 @@
 
 <!-- footer section -->
 
-<footer class=" bg-footcolor text-lightpinkneutral">
+<footer class=" bg-footcolor text-lightpinkneutral p-2">
     <section class="container mx-auto py-6 items-center p-2 md:p-0">
         
         <div class="flex flex-col items-center">
