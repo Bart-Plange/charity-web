@@ -8,15 +8,6 @@ btn.addEventListener('click', () => {
 
 })
 
-/* accordian  */
-function toggleAccordion(e) {
-    const accordionContent = e.target.nextElementSibling;
-    accordionContent.classList.toggle("hidden");
-  
-    const accordionArrow = e.target.querySelector(".accordion-arrow");
-    accordionArrow.classList.toggle("transform rotate-90");
-  }
-
 /* popup on homepage */
   
 // Get the popup container and close button
